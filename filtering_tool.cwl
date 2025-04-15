@@ -1,10 +1,10 @@
 cwlVersion: v1.2
 class: CommandLineTool
 
-label: "Access Database and Get Data"
+label: "Data selection for BigDFT simulation"
 doc: >
-  This process accesses a DIAMOND database using the rover_diamond library. It allows users to extract
-  all attributes or a specified subset, saving the result in a CSV file.
+  This process uses the queried data from the database to select the final attributes to be
+  used for the BigDFT calculation
 
 baseCommand: python
 arguments: ["filtering_tool.py"]
