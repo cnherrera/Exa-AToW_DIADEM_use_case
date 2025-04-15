@@ -18,10 +18,9 @@ requirements:
       - class: File
         location: ./conditions.json
 
-
   # Singularity requirement with the correct path to the Singularity image
   - class: DockerRequirement
-    dockerImageId: "/homelocal/ch279548/NUMPEX/ExAToW/DIADEM_use_case/github/CWL_Workflow_DIADEM_use_case/python3.10_with_pandas_numpy_rover.sif"  # Absolute path to the Singularity image
+    dockerImageId: "./python3.10_with_pandas_numpy_rover.sif"  # use Singularity image
 
   # Inline Javascript requirement, which is often required for file globbing and other features
   - class: InlineJavascriptRequirement
